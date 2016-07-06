@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ember-leaflet-routing-machine
 
 This README outlines the details of collaborating on this Ember addon.
@@ -24,3 +25,7 @@ This README outlines the details of collaborating on this Ember addon.
 * `ember build`
 
 For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+=======
+# ember-leaflet-routing-machine
+Ember Leaflet Addon to add Leaflet Routing Machine 
+>>>>>>> 4ed5826f8c25414e7ccec94b468341437b3682dc
