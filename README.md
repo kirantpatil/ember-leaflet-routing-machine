@@ -1,13 +1,12 @@
-<<<<<<< HEAD
 # Ember-leaflet-routing-machine
 
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+ember install ember-leaflet-routing-machine
+
+## Using the plugin
 
 ## Running
 
@@ -28,4 +27,3 @@ For more information on using ember-cli, visit [http://ember-cli.com/](http://em
 =======
 # ember-leaflet-routing-machine
 Ember Leaflet Addon to add Leaflet Routing Machine 
->>>>>>> 4ed5826f8c25414e7ccec94b468341437b3682dc
