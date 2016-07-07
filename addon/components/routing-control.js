@@ -4,7 +4,7 @@ import ChildMixin from 'ember-leaflet/mixins/child';
 
 export default BaseLayer.extend(ChildMixin,{
 	createLayer(){
-		return this.L.markerClusterGroup(...this.get('requiredOptions'), this.get('options'));
+		return this.L.Routing.control(...this.get('requiredOptions'), this.get('options'));
 	},
 	didInsertElement() {
 		this._super(...arguments);
