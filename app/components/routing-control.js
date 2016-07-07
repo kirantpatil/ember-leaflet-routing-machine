@@ -1,0 +1,1 @@
+export { default } from 'ember-leaflet-routing-machine/components/routing-control';
