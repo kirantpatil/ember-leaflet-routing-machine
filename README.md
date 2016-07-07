@@ -1,10 +1,13 @@
 # Ember-leaflet-routing-machine
 
-This README outlines the details of collaborating on this Ember addon.
+Provides "Find the way from A to B on a Leaflet map, using OSRM as backend" functionality for [Ember-Leaflet](http://ember-leaflet.com), an Ember Addon for [Leaflet](http://leafletjs.com) interactive maps.
+
+This plugin is based on a JS library [leaflet-routing-machine](https://github.com/perliedman/leaflet-routing-machine) and basically wraps it into ember component for usage in HTMLbars templates.
+ 
 
 ## Installation
 
-ember install ember-leaflet-routing-machine
+ ember install ember-leaflet-routing-machine
 
 ## Using the plugin
 
