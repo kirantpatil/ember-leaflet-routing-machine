@@ -15,9 +15,11 @@ test('it renders', function(assert) {
 
   // Template block usage:
   this.render(hbs`
-    {{#routing-control}}
-      template block text
-    {{/routing-control}}
+    {{#leaflet-map zoom=zoom center=center maxZoom=25}}
+      {{#routing-control waypoints=[(57.74, 11.94),(57.6792, 11.949)] routeWhileDragging=true}}
+        {{marker-layer location=markerCenter icon=icon}}
+      {{/routing-control}}
+    {{/leaflet-map}}
   `);
 
   assert.equal(this.$().text().trim(), 'template block text');
