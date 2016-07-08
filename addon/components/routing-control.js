@@ -4,27 +4,27 @@ import ChildMixin from 'ember-leaflet/mixins/child';
 
 export default BaseLayer.extend(ChildMixin,{
 	createLayer(){
-		return this.L.Routing.control(...get(this,'requiredOptions'), get(this,'options'));
+		return this.L.Routing.control(...this.get('requiredOptions'), this.get('options'));
 	},
 	didInsertElement() {
 		this._super(...arguments);
 		this.layerSetup();
-		get(this,'_childLayers').invoke('layerSetup');
+		this.get('_childLayers').invoke('layerSetup');
 	},
 	willDestroyLayer() {
-		get(this,'_childLayers').invoke('layerTeardown');
-		get(this,'_childLayers').clear();
+		this.get('_childLayers').invoke('layerTeardown');
+		this.get('_childLayers').clear();
 	},
 	layerSetup() {
-		if (Ember.isNone(get(this,'_layer'))) {
+		if (Ember.isNone(this.get('_layer'))) {
 			this._layer = this.createLayer();
 			this._addObservers();
 			this._addEventListeners();
 			this.didCreateLayer();
 		}
-		if (get(this,'containerLayer')) {
-			if (!Ember.isNone(get(this,'containerLayer')._layer)) {
-				get(this,'containerLayer')._layer.addLayer(this._layer);
+		if (this.get('containerLayer')) {
+			if (!Ember.isNone(this.get('containerLayer')._layer)) {
+				this.get('containerLayer')._layer.addLayer(this._layer);
 			}
 		}
     }
